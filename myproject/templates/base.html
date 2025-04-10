@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title%} {% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">FineWhisky</div>
+    <nav class="nav">
+      <a href="#">Page</a>
+      <a href="#">Page</a>
+      <a href="#">Page</a>
+      <button class="btn-small">Button</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  {% block content %}
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div class="column">
+        <h4>Topic</h4>
+        <ul>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Topic</h4>
+        <ul>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Topic</h4>
+        <ul>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social" style="margin-top: 2rem;">
+      <a href="#">📘</a>
+      <a href="#">🔗</a>
+      <a href="#">▶️</a>
+      <a href="#">📸</a>
+    </div>
+  </footer>
+
+</body>
+</html>
